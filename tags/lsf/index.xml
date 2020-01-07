@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LSF on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/lsf/</link>
+    <description>Recent content in LSF on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Mon, 01 Oct 2018 21:21:37 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/lsf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GPU usage information for jobs in IBM Spectrum LSF</title>
+      <link>http://gpsamu.github.io/blog/spectrumlsf_gpu_usage/</link>
+      <pubDate>Mon, 01 Oct 2018 21:21:37 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/spectrumlsf_gpu_usage/</guid>
+      <description>In my last blog, we ran through an example showing how IBM Spectrum LSF now automatically detects the presence of NVIDIA GPUs on hosts in the cluster and performs the necessary configuration of the scheduler automatically.</description>
+    </item>
+    
+    <item>
+      <title>A quick, hands on look at GPU &#34;autoconfig&#34; in IBM Spectrum LSF</title>
+      <link>http://gpsamu.github.io/blog/spectrumlsf_gpu_autoconfig/</link>
+      <pubDate>Fri, 14 Sep 2018 10:38:29 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/spectrumlsf_gpu_autoconfig/</guid>
+      <description>It&#39;s been a long time since I&#39;ve posted to my goulash blog. I&#39;ve not disappeared, rather I&#39;ve been writing articles for the IBM Accelerated Insights solution channel on HPCWire.</description>
+    </item>
+    
+    <item>
+      <title>A quick, hands on look at GPU &#34;autoconfig&#34; in IBM Spectrum LSF</title>
+      <link>http://gpsamu.github.io/blog/spectrumlsf_gpu_autoconfig/</link>
+      <pubDate>Fri, 14 Sep 2018 10:38:29 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/spectrumlsf_gpu_autoconfig/</guid>
+      <description>It&#39;s been a long time since I&#39;ve posted to my goulash blog. I&#39;ve not disappeared, rather I&#39;ve been writing articles for the IBM Accelerated Insights solution channel on HPCWire.</description>
+    </item>
+    
+    <item>
+      <title>Standing up a IBM Spectrum LSF Community Edition cluster on Arm v8</title>
+      <link>http://gpsamu.github.io/blog/spectrumlsf_armv8/</link>
+      <pubDate>Thu, 31 Aug 2017 12:01:46 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/spectrumlsf_armv8/</guid>
+      <description>So, you&#39;ve got yourself a shiny new (or maybe not) system based upon a 64-bit Arm (Arm v8) processor that you want to put through it&#39;s paces.</description>
+    </item>
+    
+    <item>
+      <title>Oh Woe is 2016 - NOT!</title>
+      <link>http://gpsamu.github.io/blog/woe_is_2016/</link>
+      <pubDate>Mon, 09 Jan 2017 16:17:58 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/woe_is_2016/</guid>
+      <description>As we enter a new year, 2016 seems to have been tarnished it the closing month by events around the world. Far be it for me to to talk about world events here, I’d like to focus on the good - at least from my perspective.</description>
+    </item>
+    
+    <item>
+      <title>SC16: Stir it up!</title>
+      <link>http://gpsamu.github.io/blog/sc16_stiritup/</link>
+      <pubDate>Thu, 10 Nov 2016 19:54:36 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/sc16_stiritup/</guid>
+      <description>It&#39;s been ages since I&#39;ve posted to this blog. I&#39;ve not forgotten about it - I&#39;ve been figuratively stirring the technical computing goulash pot over on the IBM Systems In the Making blog.</description>
+    </item>
+    
+    <item>
+      <title>IBM Platform LSF and Docker: A Whale of a time!</title>
+      <link>http://gpsamu.github.io/blog/lsf_docker_whale/</link>
+      <pubDate>Thu, 28 May 2015 21:49:58 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/lsf_docker_whale/</guid>
+      <description>Containers are useful. Whether you&#39;re shipping things across the blue seas or encapsulating applications on a computer system, they provide numerous benefits. HPC Administrators will know that applications today can depend upon multiple packages, libraries and environments.</description>
+    </item>
+    
+    <item>
+      <title>Armed and ready with IBM Platform LSF</title>
+      <link>http://gpsamu.github.io/blog/armed_ready_lsf/</link>
+      <pubDate>Fri, 11 Apr 2014 10:39:53 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/armed_ready_lsf/</guid>
+      <description>These days it&#39;s not uncommon to hear about CPUs based upon ARM cores. They can be found in mobile phones, embedded systems, laptops and even servers.</description>
+    </item>
+    
+    <item>
+      <title>ISC 2013 wrapup: IBM Platform HPC and Intel Xeon Phi </title>
+      <link>http://gpsamu.github.io/blog/isc13_wrapup/</link>
+      <pubDate>Tue, 09 Jul 2013 11:58:32 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/isc13_wrapup/</guid>
+      <description>This past June at ISC 2013 the IBM booth featured live demonstration of IBM Platform HPC V3.2 managing an IBM iDataplex cluster equipped with Intel Xeon Phi coprocessors.</description>
+    </item>
+    
+  </channel>
+</rss>

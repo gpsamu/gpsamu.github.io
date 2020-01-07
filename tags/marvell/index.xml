@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marvell on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/marvell/</link>
+    <description>Recent content in Marvell on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Tue, 29 Aug 2017 14:07:13 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/marvell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Turning up the heat...on my Armada 8040</title>
+      <link>http://gpsamu.github.io/blog/turning_up_heat_armv8/</link>
+      <pubDate>Tue, 29 Aug 2017 14:07:13 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/turning_up_heat_armv8/</guid>
+      <description>Although I took delivery of a shiny new SolidRun Marvell macchiatoBIN a few months back (end May), I&#39;ve not really had a chance to put it through it&#39;s paces until now.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="UTF-8"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="Hugo 0.61.0-DEV" />
+	
+	<link rel="icon" href="/images/virag.png">
+	
+	<title>GPU usage information for jobs in IBM Spectrum LSF | Technical Computing Goulash</title>
+	
+	
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GPU usage information for jobs in IBM Spectrum LSF"/>
+<meta name="twitter:description" content="In my last blog, we ran through an example showing how IBM Spectrum LSF now automatically detects the presence of NVIDIA GPUs on hosts in the cluster and performs the necessary configuration of the scheduler automatically."/>
+
+	<meta property="og:title" content="GPU usage information for jobs in IBM Spectrum LSF" />
+<meta property="og:description" content="In my last blog, we ran through an example showing how IBM Spectrum LSF now automatically detects the presence of NVIDIA GPUs on hosts in the cluster and performs the necessary configuration of the scheduler automatically." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gpsamu.github.io/blog/spectrumlsf_gpu_usage/" />
+<meta property="article:published_time" content="2018-10-01T21:21:37-05:00" />
+<meta property="article:modified_time" content="2018-10-01T21:21:37-05:00" />
+
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="http://gpsamu.github.io/">
+
+            
+            <img src="/images/virag.png" alt="logo">
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">About Me</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+<div class="mainheading">
+    <h1 class="sitetitle">Technical Computing Goulash</h1>
+    <p class="lead">
+         Miscellaneous ramblings about High Performance Computing (HPC), supercomputing and other tech.
+    </p>
+</div><div class="main-content">
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=GPU%20usage%20information%20for%20jobs%20in%20IBM%20Spectrum%20LSF&url=http%3a%2f%2fgpsamu.github.io%2fblog%2fspectrumlsf_gpu_usage%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+
+    </ul>
+
+    
+</div>
+</div>
+                                
+                <div class="col-md-9 flex-first flex-md-unordered">
+                    <div class="mainheading">
+                        	
+                        
+                        
+                        
+                        <div class="row post-top-meta">
+                            <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0 md-nopad-right">
+                                <img class="author-thumb" src="/images/gpsamu.png" alt="Gábor Samu">
+                            </div>
+                            <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
+                                <a target="_blank" class="link-dark">Gábor Samu</a><br>
+                                <span class="author-description">
+                                    Creator of this blog.<br>
+                                    <i class="far fa-star"></i>
+                                    Oct 1, 2018
+                                    <i class="far fa-clock clock"></i>
+                                    3 min read
+                                </span>					
+                            </div>
+                        </div>			
+                        	
+                        
+                                                
+                        
+                        <h1 class="posttitle">GPU usage information for jobs in IBM Spectrum LSF</h1> 
+                    </div>
+
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="article-post">
+                        <p>In my last blog, we ran through an example showing how IBM Spectrum LSF now automatically detects the presence of NVIDIA GPUs on hosts in the cluster and performs the necessary configuration of the scheduler automatically.</p>
+<p>In this blog, we take a closer look at the integration between Spectrum LSF and
+NVIDIA DCGM which provides GPU usage information for jobs submitted to the
+system.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/IBMSpectrum?src=hash&amp;ref_src=twsrc%5Etfw">#IBMSpectrum</a> <a href="https://twitter.com/hashtag/LSF?src=hash&amp;ref_src=twsrc%5Etfw">#LSF</a> supports <a href="https://twitter.com/hashtag/NVIDIA?src=hash&amp;ref_src=twsrc%5Etfw">#NVIDIA</a> DCGM, allowing you to get the most our of your <a href="https://twitter.com/hashtag/GPUs?src=hash&amp;ref_src=twsrc%5Etfw">#GPUs</a> <a href="https://t.co/aCo9cFHNkq">https://t.co/aCo9cFHNkq</a> <a href="https://twitter.com/hashtag/HPCmatters?src=hash&amp;ref_src=twsrc%5Etfw">#HPCmatters</a></p>&mdash; Gábor Samu (@gabor_samu) <a href="https://twitter.com/gabor_samu/status/806540074888396800?ref_src=twsrc%5Etfw">December 7, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>To enable the integration between Spectrum LSF and NVIDIA DCGM, we
+need to specify the <em>LSF_DCGM_PORT=&lt;port number&gt;</em> parameter in
+<em>LSF_ENVDIR/lsf.conf</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@kilenc:/etc/profile.d# cd $LSF_ENVDIR
+root@kilenc:/opt/ibm/lsfsuite/lsf/conf# cat lsf.conf |grep -i DCGM
+LSF_DCGM_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">5555</span></code></pre></div>
+<p>You can find more details about the variable <em>LSF_DCGM_PORT</em> and what it
+enables <a href="https://www.ibm.com/support/knowledgecenter/en/SSWRJV_10.1.0/lsf_config_ref/lsf.conf.lsf_dcgm_port.5.html">here</a>.</p>
+<p>Before continuing, please ensure that the DCGM daemon is up and running.  Below
+we start DCGM on the default port and run a query command to confirm that it's
+up and running.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@kilenc:/opt/ibm/lsfsuite/lsf/conf# nv-hostengine
+Started host engine version 1.4.6 using port number: <span style="color:#ae81ff">5555</span>
+
+root@kilenc:/opt/ibm/lsfsuite/lsf/conf# dcgmi discovery -l
+<span style="color:#ae81ff">1</span> GPU found.
++--------+-------------------------------------------------------------------+
+| GPU ID | Device Information                                                |
++<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span>+<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span>+
+| <span style="color:#ae81ff">0</span>      |  Name: Tesla V100-PCIE-32GB                                       |
+|        |  PCI Bus ID: 00000033:01:00.0                                     |
+|        |  Device UUID: GPU-3622f703-248a-df97-297e-df1f4bcd325c            |
++--------+-------------------------------------------------------------------+ </code></pre></div>
+<p>Next, let's submit a GPU job to IBM Spectrum LSF to demonstrate the collection
+of GPU accounting.  Note that the GPU job must be submitted to Spectrum LSF
+with the exclusive mode specified in order for the resource usage to be
+collected. As was the case in my previous blog, we submit the <em>gpu-burn</em> test
+job (formally known as Multi-GPU CUDA stress test).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">test@kilenc:~/gpu-burn$ bsub -gpu <span style="color:#e6db74">&#34;num=1:mode=exclusive_process&#34;</span> ./gpu_burn <span style="color:#ae81ff">120</span>
+Job &lt;54086&gt; is submitted to default queue &lt;normal&gt;</code></pre></div>
+<p>Job 54086 runs to successful completion and we use the Spectrum LSF <em>bjobs</em> command with the <em>-gpu</em> option to display the GPU usage
+information in the output below.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">test@kilenc:~/gpu-burn$ bjobs -l -gpu <span style="color:#ae81ff">54086</span>
+
+Job &lt;54086&gt;, User &lt;test&gt;, Project &lt;default&gt;, Status &lt;DONE&gt;, Queue &lt;normal&gt;, Com
+                     mand &lt;./gpu_burn 120&gt;, Share group charged &lt;/test&gt;
+Mon Oct  <span style="color:#ae81ff">1</span> 11:14:04: Submitted from host &lt;kilenc&gt;, CWD &lt;$HOME/gpu-burn&gt;, Reques
+                     ted GPU &lt;num<span style="color:#f92672">=</span>1:mode<span style="color:#f92672">=</span>exclusive_process&gt;;
+Mon Oct  <span style="color:#ae81ff">1</span> 11:14:05: Started <span style="color:#ae81ff">1</span> Task<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> on Host<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> &lt;kilenc&gt;, Allocated <span style="color:#ae81ff">1</span> Slot<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>
+                      on Host<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> &lt;kilenc&gt;, Execution Home &lt;/home/test&gt;, Executi
+                     on CWD &lt;/home/test/gpu-burn&gt;;
+Mon Oct  <span style="color:#ae81ff">1</span> 11:16:08: Done successfully. The CPU time used is 153.0 seconds.
+                     HOST: kilenc; CPU_TIME: <span style="color:#ae81ff">153</span> seconds
+                        GPU ID: <span style="color:#ae81ff">0</span>
+                            Total Execution Time: <span style="color:#ae81ff">122</span> seconds
+                            Energy Consumed: <span style="color:#ae81ff">25733</span> Joules
+                            SM Utilization <span style="color:#f92672">(</span>%<span style="color:#f92672">)</span>: Avg 99, Max 100, Min <span style="color:#ae81ff">64</span>
+                            Memory Utilization <span style="color:#f92672">(</span>%<span style="color:#f92672">)</span>: Avg 28, Max 39, Min <span style="color:#ae81ff">9</span>
+                            Max GPU Memory Used: <span style="color:#ae81ff">30714888192</span> bytes
+
+
+GPU Energy Consumed: 25733.000000 Joules
+
+
+ MEMORY USAGE:
+ MAX MEM: <span style="color:#ae81ff">219</span> Mbytes;  AVG MEM: <span style="color:#ae81ff">208</span> Mbytes
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+ EXTERNAL MESSAGES:
+ MSG_ID FROM       POST_TIME      MESSAGE                             ATTACHMENT
+ <span style="color:#ae81ff">0</span>      test       Oct  <span style="color:#ae81ff">1</span> 11:14   kilenc:gpus<span style="color:#f92672">=</span>0;                          N     
+
+ RESOURCE REQUIREMENT DETAILS:
+ Combined: <span style="color:#66d9ef">select</span><span style="color:#f92672">[</span><span style="color:#f92672">(</span>ngpus&gt;0<span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>type <span style="color:#f92672">=</span><span style="color:#f92672">=</span> local<span style="color:#f92672">)</span><span style="color:#f92672">]</span> order<span style="color:#f92672">[</span>gpu_maxfactor<span style="color:#f92672">]</span> rusage<span style="color:#f92672">[</span>ngp
+                     us_physical<span style="color:#f92672">=</span>1.00<span style="color:#f92672">]</span>
+ Effective: <span style="color:#66d9ef">select</span><span style="color:#f92672">[</span><span style="color:#f92672">(</span><span style="color:#f92672">(</span>ngpus&gt;0<span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>type <span style="color:#f92672">=</span><span style="color:#f92672">=</span> local<span style="color:#f92672">)</span><span style="color:#f92672">]</span> order<span style="color:#f92672">[</span>gpu_maxfactor<span style="color:#f92672">]</span> rusage<span style="color:#f92672">[</span>
+                     ngpus_physical<span style="color:#f92672">=</span>1.00<span style="color:#f92672">]</span>
+
+ GPU REQUIREMENT DETAILS:
+ Combined: num<span style="color:#f92672">=</span>1:mode<span style="color:#f92672">=</span>exclusive_process:mps<span style="color:#f92672">=</span>no:j_exclusive<span style="color:#f92672">=</span>yes
+ Effective: num<span style="color:#f92672">=</span>1:mode<span style="color:#f92672">=</span>exclusive_process:mps<span style="color:#f92672">=</span>no:j_exclusive<span style="color:#f92672">=</span>yes
+
+ GPU_ALLOCATION:
+ HOST             TASK ID  MODEL        MTOTAL  FACTOR MRSV    SOCKET NVLINK                           
+ kilenc           <span style="color:#ae81ff">0</span>    <span style="color:#ae81ff">0</span>   TeslaV100_PC 31.7G   7.0    0M      <span style="color:#ae81ff">8</span>      -               </code></pre></div>
+<p>Yours truly spoke at the HPC User Forum in April 2018 (Tucson, AZ) giving a
+short update in the vendor panel about Spectrum LSF, focusing on GPU
+support.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/NgSiC6ewdP8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+                    </div>
+                    
+                    
+                    <div class="after-post-tags">
+                        <ul class="tags">
+                        
+                        <li>
+                        <a href="/tags/lsf">LSF</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/gpu">GPU</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/nvidia">nvidia</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/dcgm">dcgm</a>
+                        </li>
+                        
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                    
+                    
+                        <a class="d-block col-md-6 text-lg-right" href="http://gpsamu.github.io/blog/spectrumlsf_gpu_autoconfig/">A quick, hands on look at GPU &#34;autoconfig&#34; in IBM Spectrum LSF &raquo;</a>
+                    
+                    <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+            </div>
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+			<div class="d-md-flex align-items-center justify-content-center h-100">
+				<h2 class="d-md-block d-none align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+			</div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+			
+			<a class="mt-1 mb-1" href="/tags/8040">8040</a>
+			
+			<a class="mt-1 mb-1" href="/tags/acorn">acorn</a>
+			
+			<a class="mt-1 mb-1" href="/tags/amiga">amiga</a>
+			
+			<a class="mt-1 mb-1" href="/tags/archimedes">archimedes</a>
+			
+			<a class="mt-1 mb-1" href="/tags/arm">arm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/arm-v8">arm-v8</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armada">armada</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armada8040">armada8040</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armv7">armv7</a>
+			
+			<a class="mt-1 mb-1" href="/tags/batch">batch</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cluster">cluster</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cluster-manager">cluster-manager</a>
+			
+			<a class="mt-1 mb-1" href="/tags/commodoreamiga">commodoreamiga</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cuda">cuda</a>
+			
+			<a class="mt-1 mb-1" href="/tags/dashboard">dashboard</a>
+			
+			<a class="mt-1 mb-1" href="/tags/dcgm">dcgm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/docker">docker</a>
+			
+			<a class="mt-1 mb-1" href="/tags/embree">embree</a>
+			
+			<a class="mt-1 mb-1" href="/tags/frankfurt">frankfurt</a>
+			
+			<a class="mt-1 mb-1" href="/tags/gpu">gpu</a>
+			
+			<a class="mt-1 mb-1" href="/tags/handheld-pc">handheld-pc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/hpc">hpc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/hpl">hpl</a>
+			
+			<a class="mt-1 mb-1" href="/tags/i.mx6">i.mx6</a>
+			
+			<a class="mt-1 mb-1" href="/tags/ibm">ibm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/infrastructure">infrastructure</a>
+			
+			<a class="mt-1 mb-1" href="/tags/isc">isc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/job-scheduling">job-scheduling</a>
+			
+			<a class="mt-1 mb-1" href="/tags/kepler">kepler</a>
+			
+			<a class="mt-1 mb-1" href="/tags/kits">kits</a>
+			
+			<a class="mt-1 mb-1" href="/tags/linpack">linpack</a>
+			
+			<a class="mt-1 mb-1" href="/tags/lsf">lsf</a>
+			
+			<a class="mt-1 mb-1" href="/tags/macchiatobin">macchiatobin</a>
+			
+			<a class="mt-1 mb-1" href="/tags/marvell">marvell</a>
+			
+			<a class="mt-1 mb-1" href="/tags/mips">mips</a>
+			
+			<a class="mt-1 mb-1" href="/tags/monitoring">monitoring</a>
+			
+			<a class="mt-1 mb-1" href="/tags/netbsd">netbsd</a>
+			
+			<a class="mt-1 mb-1" href="/tags/network-bridge">network-bridge</a>
+			
+			<a class="mt-1 mb-1" href="/tags/nvidia">nvidia</a>
+			
+			<a class="mt-1 mb-1" href="/tags/olivetti">olivetti</a>
+			
+			<a class="mt-1 mb-1" href="/tags/openpower">openpower</a>
+			
+			<a class="mt-1 mb-1" href="/tags/platform">platform</a>
+			
+			<a class="mt-1 mb-1" href="/tags/platform-hpc">platform-hpc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/power-systems">power-systems</a>
+			
+			<a class="mt-1 mb-1" href="/tags/power8">power8</a>
+			
+			<a class="mt-1 mb-1" href="/tags/road-trip">road-trip</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sc13">sc13</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sc16">sc16</a>
+			
+			<a class="mt-1 mb-1" href="/tags/scale-out">scale-out</a>
+			
+			<a class="mt-1 mb-1" href="/tags/scheduler">scheduler</a>
+			
+			<a class="mt-1 mb-1" href="/tags/solaris">solaris</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sparc">sparc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/supercomputing">supercomputing</a>
+			
+			<a class="mt-1 mb-1" href="/tags/technical-computing">technical-computing</a>
+			
+			<a class="mt-1 mb-1" href="/tags/tesla">tesla</a>
+			
+			<a class="mt-1 mb-1" href="/tags/udoo-quad">udoo-quad</a>
+			
+			<a class="mt-1 mb-1" href="/tags/ultrasparc">ultrasparc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/unix">unix</a>
+			
+			<a class="mt-1 mb-1" href="/tags/v100">v100</a>
+			
+			<a class="mt-1 mb-1" href="/tags/workflow">workflow</a>
+			
+			<a class="mt-1 mb-1" href="/tags/workpad-z50">workpad-z50</a>
+			
+			<a class="mt-1 mb-1" href="/tags/xcat">xcat</a>
+			
+			<a class="mt-1 mb-1" href="/tags/xeon-phi">xeon-phi</a>
+			
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright Gábor Samu - All rights reserved
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" rel="noopener" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/mediumish.js"></script>
+
+    </body>
+</html>

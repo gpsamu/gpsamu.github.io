@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="UTF-8"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="Hugo 0.61.0-DEV" />
+	
+	<link rel="icon" href="/images/virag.png">
+	
+	<title>IBM Workpad z50 &amp; NetBSD - an interesting combination | Technical Computing Goulash</title>
+	
+	
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="IBM Workpad z50 &amp; NetBSD - an interesting combination"/>
+<meta name="twitter:description" content="This week we look at another RISC powered notebook, this time from IBM.
+Although IBM did produce a line of PowerPC based Thinkpad systems, this blog is focused on a little known system called the IBM Workpad z50."/>
+
+	<meta property="og:title" content="IBM Workpad z50 &amp; NetBSD - an interesting combination" />
+<meta property="og:description" content="This week we look at another RISC powered notebook, this time from IBM.
+Although IBM did produce a line of PowerPC based Thinkpad systems, this blog is focused on a little known system called the IBM Workpad z50." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gpsamu.github.io/blog/workpadz50_netbsd/" />
+<meta property="article:published_time" content="2015-02-16T09:51:20-05:00" />
+<meta property="article:modified_time" content="2015-02-16T09:51:20-05:00" />
+
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="http://gpsamu.github.io/">
+
+            
+            <img src="/images/virag.png" alt="logo">
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">About Me</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+<div class="mainheading">
+    <h1 class="sitetitle">Technical Computing Goulash</h1>
+    <p class="lead">
+         Miscellaneous ramblings about High Performance Computing (HPC), supercomputing and other tech.
+    </p>
+</div><div class="main-content">
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=IBM%20Workpad%20z50%20%26%20NetBSD%20-%20an%20interesting%20combination&url=http%3a%2f%2fgpsamu.github.io%2fblog%2fworkpadz50_netbsd%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+
+    </ul>
+
+    
+</div>
+</div>
+                                
+                <div class="col-md-9 flex-first flex-md-unordered">
+                    <div class="mainheading">
+                        	
+                        
+                        
+                        
+                        <div class="row post-top-meta">
+                            <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0 md-nopad-right">
+                                <img class="author-thumb" src="/images/gpsamu.png" alt="Gábor Samu">
+                            </div>
+                            <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
+                                <a target="_blank" class="link-dark">Gábor Samu</a><br>
+                                <span class="author-description">
+                                    Creator of this blog.<br>
+                                    <i class="far fa-star"></i>
+                                    Feb 16, 2015
+                                    <i class="far fa-clock clock"></i>
+                                    2 min read
+                                </span>					
+                            </div>
+                        </div>			
+                        	
+                        
+                                                
+                        
+                        <h1 class="posttitle">IBM Workpad z50 &amp; NetBSD - an interesting combination</h1> 
+                    </div>
+
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="article-post">
+                        <p>This week we look at another RISC powered notebook, this time from IBM.<br>
+Although IBM did produce a line of PowerPC based Thinkpad systems, this blog
+is focused on a little known system called the IBM Workpad z50. This Microsoft
+Handheld PC form factor system was launched in March 1999 and ran Windows CE
+at the time. As we’ll see below, with some ingenuity it is also able to run
+NetBSD, which makes it a much more interesting proposition (at least for me).
+Ironically, although this is a high performance computing (HPC) focused blog,
+the “HPC” in this case stands for “Handheld PC”.</p>
+<p>The Workpad z50 has a form factor smaller than a notebook, but has what I
+consider to be an excellent keyboard and of course the trademark Thinkpad
+trackpoint!  Looking more closely at the specifications:</p>
+<ul>
+<li>NEC VR4121 MIPS R4100 CPU @ 131 MHz</li>
+<li>16 MB System RAM (expandable)</li>
+<li>16 MB System ROM</li>
+<li>8.4” LCD Display 640x480 (16-bit)</li>
+<li>External Monitor connector (SVGA)</li>
+<li>Serial port</li>
+<li>Infrared port</li>
+<li>CF slot</li>
+<li>PCMCIA slot</li>
+</ul>
+<p>What prevents me from taking my pristine Workpad z50 to the local electronics
+recycling facility is NetBSD. With a little effort it is possible to install
+recent versions of NetBSD on the Workpad z50 and even run XWindows. There are
+a number of sources of information on this topic including some videos on
+YouTube which helped me a great deal:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/F6lCj20_Xo4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>I won’t run through the install procedure here as that’s been well covered
+already in the above series of videos. Rather, let’s look at the boot-up
+sequence and of course in keeping with the high performance computing theme,
+run a simple benchmark. Links to the videos follow below:</p>
+<p><strong>The requisite system bootup</strong>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/hSLVnSZKB9I" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p><strong>Starting XWindows and running Linpack</strong>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/mIA-NWEHLM4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p>Using NetBSD pkgsrc, I have setup NetBSD on a x86 based system and have taken
+advantage of distcc to cross compile binaries. This helps greatly to get
+packages quickly compiled for the system. Note that I ran into a log of local
+compiles failing due to lack of RAM.  So cross compiling is almost a must.</p>
+<p>Equipped with PCMCIA, I’m able to easily add to the Workpad z50 such
+capabilities as Ethernet, Wireless networking and even SCSI.  Below is my
+collection of PCMCIA adaptors.</p>
+<figure>
+    <img src="/images/pcmcia.jpg"/> 
+</figure>
+
+<p>Next steps?  I'll be looking to move to NetBSD 6.x series and compile a more
+compact kernel (with drivers removed that I don't require). And unlike the
+system in my previous blog, this one is silent :)</p>
+
+                    </div>
+                    
+                    
+                    <div class="after-post-tags">
+                        <ul class="tags">
+                        
+                        <li>
+                        <a href="/tags/mips">mips</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/workpad-z50">workpad z50</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/handheld-pc">handheld pc</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/netbsd">netbsd</a>
+                        </li>
+                        
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                    
+                        <a class="d-block col-md-6" href="http://gpsamu.github.io/blog/hpc_seeing_believing/"> &laquo; HPC: Seeing is believing</a>
+                    
+                    
+                        <a class="d-block col-md-6 text-lg-right" href="http://gpsamu.github.io/blog/ultrasparc_laptop/">UltraSPARC powered laptop - circa 2001  &raquo;</a>
+                    
+                    <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+            </div>
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+			<div class="d-md-flex align-items-center justify-content-center h-100">
+				<h2 class="d-md-block d-none align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+			</div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+			
+			<a class="mt-1 mb-1" href="/tags/8040">8040</a>
+			
+			<a class="mt-1 mb-1" href="/tags/acorn">acorn</a>
+			
+			<a class="mt-1 mb-1" href="/tags/amiga">amiga</a>
+			
+			<a class="mt-1 mb-1" href="/tags/archimedes">archimedes</a>
+			
+			<a class="mt-1 mb-1" href="/tags/arm">arm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/arm-v8">arm-v8</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armada">armada</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armada8040">armada8040</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armv7">armv7</a>
+			
+			<a class="mt-1 mb-1" href="/tags/batch">batch</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cluster">cluster</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cluster-manager">cluster-manager</a>
+			
+			<a class="mt-1 mb-1" href="/tags/commodoreamiga">commodoreamiga</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cuda">cuda</a>
+			
+			<a class="mt-1 mb-1" href="/tags/dashboard">dashboard</a>
+			
+			<a class="mt-1 mb-1" href="/tags/dcgm">dcgm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/docker">docker</a>
+			
+			<a class="mt-1 mb-1" href="/tags/embree">embree</a>
+			
+			<a class="mt-1 mb-1" href="/tags/frankfurt">frankfurt</a>
+			
+			<a class="mt-1 mb-1" href="/tags/gpu">gpu</a>
+			
+			<a class="mt-1 mb-1" href="/tags/handheld-pc">handheld-pc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/hpc">hpc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/hpl">hpl</a>
+			
+			<a class="mt-1 mb-1" href="/tags/i.mx6">i.mx6</a>
+			
+			<a class="mt-1 mb-1" href="/tags/ibm">ibm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/infrastructure">infrastructure</a>
+			
+			<a class="mt-1 mb-1" href="/tags/isc">isc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/job-scheduling">job-scheduling</a>
+			
+			<a class="mt-1 mb-1" href="/tags/kepler">kepler</a>
+			
+			<a class="mt-1 mb-1" href="/tags/kits">kits</a>
+			
+			<a class="mt-1 mb-1" href="/tags/linpack">linpack</a>
+			
+			<a class="mt-1 mb-1" href="/tags/lsf">lsf</a>
+			
+			<a class="mt-1 mb-1" href="/tags/macchiatobin">macchiatobin</a>
+			
+			<a class="mt-1 mb-1" href="/tags/marvell">marvell</a>
+			
+			<a class="mt-1 mb-1" href="/tags/mips">mips</a>
+			
+			<a class="mt-1 mb-1" href="/tags/monitoring">monitoring</a>
+			
+			<a class="mt-1 mb-1" href="/tags/netbsd">netbsd</a>
+			
+			<a class="mt-1 mb-1" href="/tags/network-bridge">network-bridge</a>
+			
+			<a class="mt-1 mb-1" href="/tags/nvidia">nvidia</a>
+			
+			<a class="mt-1 mb-1" href="/tags/olivetti">olivetti</a>
+			
+			<a class="mt-1 mb-1" href="/tags/openpower">openpower</a>
+			
+			<a class="mt-1 mb-1" href="/tags/platform">platform</a>
+			
+			<a class="mt-1 mb-1" href="/tags/platform-hpc">platform-hpc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/power-systems">power-systems</a>
+			
+			<a class="mt-1 mb-1" href="/tags/power8">power8</a>
+			
+			<a class="mt-1 mb-1" href="/tags/road-trip">road-trip</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sc13">sc13</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sc16">sc16</a>
+			
+			<a class="mt-1 mb-1" href="/tags/scale-out">scale-out</a>
+			
+			<a class="mt-1 mb-1" href="/tags/scheduler">scheduler</a>
+			
+			<a class="mt-1 mb-1" href="/tags/solaris">solaris</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sparc">sparc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/supercomputing">supercomputing</a>
+			
+			<a class="mt-1 mb-1" href="/tags/technical-computing">technical-computing</a>
+			
+			<a class="mt-1 mb-1" href="/tags/tesla">tesla</a>
+			
+			<a class="mt-1 mb-1" href="/tags/udoo-quad">udoo-quad</a>
+			
+			<a class="mt-1 mb-1" href="/tags/ultrasparc">ultrasparc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/unix">unix</a>
+			
+			<a class="mt-1 mb-1" href="/tags/v100">v100</a>
+			
+			<a class="mt-1 mb-1" href="/tags/workflow">workflow</a>
+			
+			<a class="mt-1 mb-1" href="/tags/workpad-z50">workpad-z50</a>
+			
+			<a class="mt-1 mb-1" href="/tags/xcat">xcat</a>
+			
+			<a class="mt-1 mb-1" href="/tags/xeon-phi">xeon-phi</a>
+			
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright Gábor Samu - All rights reserved
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" rel="noopener" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/mediumish.js"></script>
+
+    </body>
+</html>

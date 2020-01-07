@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/</link>
+    <description>Recent content in Tags on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Mon, 01 Oct 2018 21:21:37 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>dcgm</title>
+      <link>http://gpsamu.github.io/tags/dcgm/</link>
+      <pubDate>Mon, 01 Oct 2018 21:21:37 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/dcgm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU</title>
+      <link>http://gpsamu.github.io/tags/gpu/</link>
+      <pubDate>Mon, 01 Oct 2018 21:21:37 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LSF</title>
+      <link>http://gpsamu.github.io/tags/lsf/</link>
+      <pubDate>Mon, 01 Oct 2018 21:21:37 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/lsf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nvidia</title>
+      <link>http://gpsamu.github.io/tags/nvidia/</link>
+      <pubDate>Mon, 01 Oct 2018 21:21:37 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/nvidia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v100</title>
+      <link>http://gpsamu.github.io/tags/v100/</link>
+      <pubDate>Fri, 14 Sep 2018 10:38:29 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/v100/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arm</title>
+      <link>http://gpsamu.github.io/tags/arm/</link>
+      <pubDate>Fri, 15 Sep 2017 11:37:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/arm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Armada8040</title>
+      <link>http://gpsamu.github.io/tags/armada8040/</link>
+      <pubDate>Fri, 15 Sep 2017 11:37:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/armada8040/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HPC</title>
+      <link>http://gpsamu.github.io/tags/hpc/</link>
+      <pubDate>Fri, 15 Sep 2017 11:37:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/hpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HPL</title>
+      <link>http://gpsamu.github.io/tags/hpl/</link>
+      <pubDate>Fri, 15 Sep 2017 11:37:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/hpl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linpack</title>
+      <link>http://gpsamu.github.io/tags/linpack/</link>
+      <pubDate>Fri, 15 Sep 2017 11:37:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/linpack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macchiatobin</title>
+      <link>http://gpsamu.github.io/tags/macchiatobin/</link>
+      <pubDate>Fri, 15 Sep 2017 11:37:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/macchiatobin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arm v8</title>
+      <link>http://gpsamu.github.io/tags/arm-v8/</link>
+      <pubDate>Thu, 31 Aug 2017 12:01:46 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/arm-v8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>batch</title>
+      <link>http://gpsamu.github.io/tags/batch/</link>
+      <pubDate>Thu, 31 Aug 2017 12:01:46 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/batch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scheduler</title>
+      <link>http://gpsamu.github.io/tags/scheduler/</link>
+      <pubDate>Thu, 31 Aug 2017 12:01:46 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/scheduler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>8040</title>
+      <link>http://gpsamu.github.io/tags/8040/</link>
+      <pubDate>Tue, 29 Aug 2017 14:07:13 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/8040/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Armada</title>
+      <link>http://gpsamu.github.io/tags/armada/</link>
+      <pubDate>Tue, 29 Aug 2017 14:07:13 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/armada/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marvell</title>
+      <link>http://gpsamu.github.io/tags/marvell/</link>
+      <pubDate>Tue, 29 Aug 2017 14:07:13 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/marvell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openpower</title>
+      <link>http://gpsamu.github.io/tags/openpower/</link>
+      <pubDate>Mon, 09 Jan 2017 16:17:58 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/openpower/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>power systems</title>
+      <link>http://gpsamu.github.io/tags/power-systems/</link>
+      <pubDate>Mon, 09 Jan 2017 16:17:58 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/power-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sc16</title>
+      <link>http://gpsamu.github.io/tags/sc16/</link>
+      <pubDate>Thu, 10 Nov 2016 19:54:36 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/sc16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>supercomputing</title>
+      <link>http://gpsamu.github.io/tags/supercomputing/</link>
+      <pubDate>Thu, 10 Nov 2016 19:54:36 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/supercomputing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technical computing</title>
+      <link>http://gpsamu.github.io/tags/technical-computing/</link>
+      <pubDate>Thu, 10 Nov 2016 19:54:36 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/technical-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>amiga</title>
+      <link>http://gpsamu.github.io/tags/amiga/</link>
+      <pubDate>Fri, 01 Apr 2016 20:44:49 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/amiga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>commodoreamiga</title>
+      <link>http://gpsamu.github.io/tags/commodoreamiga/</link>
+      <pubDate>Fri, 01 Apr 2016 20:44:49 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/commodoreamiga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unix</title>
+      <link>http://gpsamu.github.io/tags/unix/</link>
+      <pubDate>Fri, 01 Apr 2016 20:44:49 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/unix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>frankfurt</title>
+      <link>http://gpsamu.github.io/tags/frankfurt/</link>
+      <pubDate>Tue, 28 Jul 2015 21:08:23 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/frankfurt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ISC</title>
+      <link>http://gpsamu.github.io/tags/isc/</link>
+      <pubDate>Tue, 28 Jul 2015 21:08:23 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/isc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>road trip</title>
+      <link>http://gpsamu.github.io/tags/road-trip/</link>
+      <pubDate>Tue, 28 Jul 2015 21:08:23 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/road-trip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>http://gpsamu.github.io/tags/workflow/</link>
+      <pubDate>Tue, 28 Jul 2015 21:08:23 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/workflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cluster manager</title>
+      <link>http://gpsamu.github.io/tags/cluster-manager/</link>
+      <pubDate>Sat, 06 Jun 2015 21:42:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/cluster-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scale-out</title>
+      <link>http://gpsamu.github.io/tags/scale-out/</link>
+      <pubDate>Sat, 06 Jun 2015 21:42:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/scale-out/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xcat</title>
+      <link>http://gpsamu.github.io/tags/xcat/</link>
+      <pubDate>Sat, 06 Jun 2015 21:42:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/xcat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>http://gpsamu.github.io/tags/docker/</link>
+      <pubDate>Thu, 28 May 2015 21:49:58 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IBM</title>
+      <link>http://gpsamu.github.io/tags/ibm/</link>
+      <pubDate>Thu, 28 May 2015 21:49:58 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/ibm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>infrastructure</title>
+      <link>http://gpsamu.github.io/tags/infrastructure/</link>
+      <pubDate>Wed, 13 May 2015 09:24:34 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>job scheduling</title>
+      <link>http://gpsamu.github.io/tags/job-scheduling/</link>
+      <pubDate>Wed, 13 May 2015 09:24:34 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/job-scheduling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>power8</title>
+      <link>http://gpsamu.github.io/tags/power8/</link>
+      <pubDate>Wed, 13 May 2015 09:24:34 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/power8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dashboard</title>
+      <link>http://gpsamu.github.io/tags/dashboard/</link>
+      <pubDate>Mon, 11 May 2015 09:34:40 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/dashboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monitoring</title>
+      <link>http://gpsamu.github.io/tags/monitoring/</link>
+      <pubDate>Mon, 11 May 2015 09:34:40 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>handheld pc</title>
+      <link>http://gpsamu.github.io/tags/handheld-pc/</link>
+      <pubDate>Mon, 16 Feb 2015 09:51:20 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/handheld-pc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mips</title>
+      <link>http://gpsamu.github.io/tags/mips/</link>
+      <pubDate>Mon, 16 Feb 2015 09:51:20 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/mips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>netbsd</title>
+      <link>http://gpsamu.github.io/tags/netbsd/</link>
+      <pubDate>Mon, 16 Feb 2015 09:51:20 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/netbsd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workpad z50</title>
+      <link>http://gpsamu.github.io/tags/workpad-z50/</link>
+      <pubDate>Mon, 16 Feb 2015 09:51:20 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/workpad-z50/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solaris</title>
+      <link>http://gpsamu.github.io/tags/solaris/</link>
+      <pubDate>Fri, 30 Jan 2015 10:07:57 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/solaris/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SPARC</title>
+      <link>http://gpsamu.github.io/tags/sparc/</link>
+      <pubDate>Fri, 30 Jan 2015 10:07:57 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/sparc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UltraSPARC</title>
+      <link>http://gpsamu.github.io/tags/ultrasparc/</link>
+      <pubDate>Fri, 30 Jan 2015 10:07:57 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/ultrasparc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>armv7</title>
+      <link>http://gpsamu.github.io/tags/armv7/</link>
+      <pubDate>Fri, 11 Apr 2014 10:39:53 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/armv7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>i.mx6</title>
+      <link>http://gpsamu.github.io/tags/i.mx6/</link>
+      <pubDate>Fri, 11 Apr 2014 10:39:53 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/i.mx6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Udoo Quad</title>
+      <link>http://gpsamu.github.io/tags/udoo-quad/</link>
+      <pubDate>Fri, 11 Apr 2014 10:39:53 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/udoo-quad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Acorn</title>
+      <link>http://gpsamu.github.io/tags/acorn/</link>
+      <pubDate>Thu, 13 Mar 2014 11:29:42 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/acorn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archimedes</title>
+      <link>http://gpsamu.github.io/tags/archimedes/</link>
+      <pubDate>Thu, 13 Mar 2014 11:29:42 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/archimedes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Olivetti</title>
+      <link>http://gpsamu.github.io/tags/olivetti/</link>
+      <pubDate>Thu, 13 Mar 2014 11:29:42 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/olivetti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cluster</title>
+      <link>http://gpsamu.github.io/tags/cluster/</link>
+      <pubDate>Fri, 20 Dec 2013 13:35:22 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/cluster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cuda</title>
+      <link>http://gpsamu.github.io/tags/cuda/</link>
+      <pubDate>Fri, 20 Dec 2013 13:35:22 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/cuda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kepler</title>
+      <link>http://gpsamu.github.io/tags/kepler/</link>
+      <pubDate>Fri, 20 Dec 2013 13:35:22 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/kepler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kits</title>
+      <link>http://gpsamu.github.io/tags/kits/</link>
+      <pubDate>Fri, 20 Dec 2013 13:35:22 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/kits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>platform</title>
+      <link>http://gpsamu.github.io/tags/platform/</link>
+      <pubDate>Fri, 20 Dec 2013 13:35:22 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tesla</title>
+      <link>http://gpsamu.github.io/tags/tesla/</link>
+      <pubDate>Fri, 20 Dec 2013 13:35:22 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/tesla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SC13</title>
+      <link>http://gpsamu.github.io/tags/sc13/</link>
+      <pubDate>Fri, 22 Nov 2013 11:44:50 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/sc13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network bridge</title>
+      <link>http://gpsamu.github.io/tags/network-bridge/</link>
+      <pubDate>Wed, 09 Oct 2013 13:12:15 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/network-bridge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>embree</title>
+      <link>http://gpsamu.github.io/tags/embree/</link>
+      <pubDate>Tue, 09 Jul 2013 11:58:32 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/embree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xeon Phi</title>
+      <link>http://gpsamu.github.io/tags/xeon-phi/</link>
+      <pubDate>Tue, 09 Jul 2013 11:58:32 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/xeon-phi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Platform HPC</title>
+      <link>http://gpsamu.github.io/tags/platform-hpc/</link>
+      <pubDate>Wed, 24 Apr 2013 12:32:15 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/tags/platform-hpc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

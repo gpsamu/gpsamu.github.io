@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://gpsamu.github.io/static/imprint/</loc>
+    <lastmod>2018-10-07T11:12:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/static/</loc>
+    <lastmod>2018-10-07T11:12:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/</loc>
+    <lastmod>2018-10-07T11:12:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/</loc>
+    <lastmod>2018-10-01T21:21:37-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/dcgm/</loc>
+    <lastmod>2018-10-01T21:21:37-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/gpu/</loc>
+    <lastmod>2018-10-01T21:21:37-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/spectrumlsf_gpu_usage/</loc>
+    <lastmod>2018-10-01T21:21:37-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/lsf/</loc>
+    <lastmod>2018-10-01T21:21:37-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/nvidia/</loc>
+    <lastmod>2018-10-01T21:21:37-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/</loc>
+    <lastmod>2018-10-01T21:21:37-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/spectrumlsf_gpu_autoconfig/</loc>
+    <lastmod>2018-09-14T10:38:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/v100/</loc>
+    <lastmod>2018-09-14T10:38:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/arm/</loc>
+    <lastmod>2017-09-15T11:37:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/armada8040/</loc>
+    <lastmod>2017-09-15T11:37:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/benchmarking_macchiatobin/</loc>
+    <lastmod>2017-09-15T11:37:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/hpc/</loc>
+    <lastmod>2017-09-15T11:37:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/hpl/</loc>
+    <lastmod>2017-09-15T11:37:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/linpack/</loc>
+    <lastmod>2017-09-15T11:37:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/macchiatobin/</loc>
+    <lastmod>2017-09-15T11:37:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/arm-v8/</loc>
+    <lastmod>2017-08-31T12:01:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/batch/</loc>
+    <lastmod>2017-08-31T12:01:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/scheduler/</loc>
+    <lastmod>2017-08-31T12:01:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/spectrumlsf_armv8/</loc>
+    <lastmod>2017-08-31T12:01:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/8040/</loc>
+    <lastmod>2017-08-29T14:07:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/armada/</loc>
+    <lastmod>2017-08-29T14:07:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/marvell/</loc>
+    <lastmod>2017-08-29T14:07:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/turning_up_heat_armv8/</loc>
+    <lastmod>2017-08-29T14:07:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/woe_is_2016/</loc>
+    <lastmod>2017-01-09T16:17:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/openpower/</loc>
+    <lastmod>2017-01-09T16:17:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/power-systems/</loc>
+    <lastmod>2017-01-09T16:17:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/sc16/</loc>
+    <lastmod>2016-11-10T19:54:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/sc16_stiritup/</loc>
+    <lastmod>2016-11-10T19:54:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/supercomputing/</loc>
+    <lastmod>2016-11-10T19:54:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/technical-computing/</loc>
+    <lastmod>2016-11-10T19:54:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/amiga/</loc>
+    <lastmod>2016-04-01T20:44:49-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/commodoreamiga/</loc>
+    <lastmod>2016-04-01T20:44:49-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/reminiscing_computingrenaissance/</loc>
+    <lastmod>2016-04-01T20:44:49-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/unix/</loc>
+    <lastmod>2016-04-01T20:44:49-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/frankfurt/</loc>
+    <lastmod>2015-07-28T21:08:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/isc/</loc>
+    <lastmod>2015-07-28T21:08:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/isc15_lookingback/</loc>
+    <lastmod>2015-07-28T21:08:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/road-trip/</loc>
+    <lastmod>2015-07-28T21:08:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/workflow/</loc>
+    <lastmod>2015-07-28T21:08:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/cluster-manager/</loc>
+    <lastmod>2015-06-06T21:42:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/clustermanager_eggs/</loc>
+    <lastmod>2015-06-06T21:42:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/scale-out/</loc>
+    <lastmod>2015-06-06T21:42:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/xcat/</loc>
+    <lastmod>2015-06-06T21:42:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/docker/</loc>
+    <lastmod>2015-05-28T21:49:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/ibm/</loc>
+    <lastmod>2015-05-28T21:49:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/lsf_docker_whale/</loc>
+    <lastmod>2015-05-28T21:49:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/sdi_openpower/</loc>
+    <lastmod>2015-05-13T09:24:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/infrastructure/</loc>
+    <lastmod>2015-05-13T09:24:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/job-scheduling/</loc>
+    <lastmod>2015-05-13T09:24:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/power8/</loc>
+    <lastmod>2015-05-13T09:24:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/dashboard/</loc>
+    <lastmod>2015-05-11T09:34:40-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/hpc_seeing_believing/</loc>
+    <lastmod>2015-05-11T09:34:40-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/monitoring/</loc>
+    <lastmod>2015-05-11T09:34:40-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/handheld-pc/</loc>
+    <lastmod>2015-02-16T09:51:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/workpadz50_netbsd/</loc>
+    <lastmod>2015-02-16T09:51:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/mips/</loc>
+    <lastmod>2015-02-16T09:51:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/netbsd/</loc>
+    <lastmod>2015-02-16T09:51:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/workpad-z50/</loc>
+    <lastmod>2015-02-16T09:51:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/solaris/</loc>
+    <lastmod>2015-01-30T10:07:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/sparc/</loc>
+    <lastmod>2015-01-30T10:07:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/ultrasparc/</loc>
+    <lastmod>2015-01-30T10:07:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/ultrasparc_laptop/</loc>
+    <lastmod>2015-01-30T10:07:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/docker_for_hpc/</loc>
+    <lastmod>2014-09-05T10:21:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/isc14_leipzig/</loc>
+    <lastmod>2014-06-28T10:24:51-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/armed_ready_lsf/</loc>
+    <lastmod>2014-04-11T10:39:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/armv7/</loc>
+    <lastmod>2014-04-11T10:39:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/i.mx6/</loc>
+    <lastmod>2014-04-11T10:39:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/udoo-quad/</loc>
+    <lastmod>2014-04-11T10:39:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/udoo_test/</loc>
+    <lastmod>2014-03-23T10:53:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/acorn/</loc>
+    <lastmod>2014-03-13T11:29:42-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/archimedes/</loc>
+    <lastmod>2014-03-13T11:29:42-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/arm_days_of_old/</loc>
+    <lastmod>2014-03-13T11:29:42-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/olivetti/</loc>
+    <lastmod>2014-03-13T11:29:42-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/cluster/</loc>
+    <lastmod>2013-12-20T13:35:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/cuda/</loc>
+    <lastmod>2013-12-20T13:35:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/hpc411_nvidia/</loc>
+    <lastmod>2013-12-20T13:35:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/kepler/</loc>
+    <lastmod>2013-12-20T13:35:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/kits/</loc>
+    <lastmod>2013-12-20T13:35:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/platform/</loc>
+    <lastmod>2013-12-20T13:35:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/tesla/</loc>
+    <lastmod>2013-12-20T13:35:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/sc13/</loc>
+    <lastmod>2013-11-22T11:44:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/sc13/</loc>
+    <lastmod>2013-11-22T11:44:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/hpc411_bridge/</loc>
+    <lastmod>2013-10-09T13:12:15-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/network-bridge/</loc>
+    <lastmod>2013-10-09T13:12:15-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/embree/</loc>
+    <lastmod>2013-07-09T11:58:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/isc13_wrapup/</loc>
+    <lastmod>2013-07-09T11:58:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/xeon-phi/</loc>
+    <lastmod>2013-07-09T11:58:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/blog/hpc32_cuda/</loc>
+    <lastmod>2013-04-24T12:32:15-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/tags/platform-hpc/</loc>
+    <lastmod>2013-04-24T12:32:15-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gpsamu.github.io/categories/</loc>
+  </url>
+  
+</urlset>

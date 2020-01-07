@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SC13 on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/sc13/</link>
+    <description>Recent content in SC13 on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Fri, 22 Nov 2013 11:44:50 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/sc13/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Supercomputing 2013 (SC13)</title>
+      <link>http://gpsamu.github.io/blog/sc13/</link>
+      <pubDate>Fri, 22 Nov 2013 11:44:50 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/sc13/</guid>
+      <description>Super Computing 2013 has now come to a close. For those of you who were in Denver, we hope that you had the opportunity to visit the IBM booth.</description>
+    </item>
+    
+  </channel>
+</rss>

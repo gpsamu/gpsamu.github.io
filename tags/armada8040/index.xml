@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Armada8040 on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/armada8040/</link>
+    <description>Recent content in Armada8040 on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Fri, 15 Sep 2017 11:37:03 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/armada8040/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cool and quiet benchmarking on MACCHIATObin (Armada 8040)</title>
+      <link>http://gpsamu.github.io/blog/benchmarking_macchiatobin/</link>
+      <pubDate>Fri, 15 Sep 2017 11:37:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/benchmarking_macchiatobin/</guid>
+      <description>I&#39;ve recently taken delivery of a few new goodies to complement the MACCHIATObin Arm v8 powered board that I&#39;ve written about recently on my blog.</description>
+    </item>
+    
+  </channel>
+</rss>

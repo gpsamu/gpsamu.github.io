@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sc16 on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/sc16/</link>
+    <description>Recent content in sc16 on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Thu, 10 Nov 2016 19:54:36 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/sc16/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SC16: Stir it up!</title>
+      <link>http://gpsamu.github.io/blog/sc16_stiritup/</link>
+      <pubDate>Thu, 10 Nov 2016 19:54:36 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/sc16_stiritup/</guid>
+      <description>It&#39;s been ages since I&#39;ve posted to this blog. I&#39;ve not forgotten about it - I&#39;ve been figuratively stirring the technical computing goulash pot over on the IBM Systems In the Making blog.</description>
+    </item>
+    
+  </channel>
+</rss>

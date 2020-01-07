@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="UTF-8"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="Hugo 0.61.0-DEV" />
+	
+	<link rel="icon" href="/images/virag.png">
+	
+	<title>ISC 2013 wrapup: IBM Platform HPC and Intel Xeon Phi  | Technical Computing Goulash</title>
+	
+	
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ISC 2013 wrapup: IBM Platform HPC and Intel Xeon Phi "/>
+<meta name="twitter:description" content="This past June at ISC 2013 the IBM booth featured live demonstration of IBM Platform HPC V3.2 managing an IBM iDataplex cluster equipped with Intel Xeon Phi coprocessors."/>
+
+	<meta property="og:title" content="ISC 2013 wrapup: IBM Platform HPC and Intel Xeon Phi " />
+<meta property="og:description" content="This past June at ISC 2013 the IBM booth featured live demonstration of IBM Platform HPC V3.2 managing an IBM iDataplex cluster equipped with Intel Xeon Phi coprocessors." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gpsamu.github.io/blog/isc13_wrapup/" />
+<meta property="article:published_time" content="2013-07-09T11:58:32-05:00" />
+<meta property="article:modified_time" content="2013-07-09T11:58:32-05:00" />
+
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="http://gpsamu.github.io/">
+
+            
+            <img src="/images/virag.png" alt="logo">
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">About Me</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+<div class="mainheading">
+    <h1 class="sitetitle">Technical Computing Goulash</h1>
+    <p class="lead">
+         Miscellaneous ramblings about High Performance Computing (HPC), supercomputing and other tech.
+    </p>
+</div><div class="main-content">
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=ISC%202013%20wrapup%3a%20IBM%20Platform%20HPC%20and%20Intel%20Xeon%20Phi%20&url=http%3a%2f%2fgpsamu.github.io%2fblog%2fisc13_wrapup%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+
+    </ul>
+
+    
+</div>
+</div>
+                                
+                <div class="col-md-9 flex-first flex-md-unordered">
+                    <div class="mainheading">
+                        	
+                        
+                        
+                        
+                        <div class="row post-top-meta">
+                            <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0 md-nopad-right">
+                                <img class="author-thumb" src="/images/gpsamu.png" alt="Gábor Samu">
+                            </div>
+                            <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
+                                <a target="_blank" class="link-dark">Gábor Samu</a><br>
+                                <span class="author-description">
+                                    Creator of this blog.<br>
+                                    <i class="far fa-star"></i>
+                                    Jul 9, 2013
+                                    <i class="far fa-clock clock"></i>
+                                    2 min read
+                                </span>					
+                            </div>
+                        </div>			
+                        	
+                        
+                                                
+                        
+                        <h1 class="posttitle">ISC 2013 wrapup: IBM Platform HPC and Intel Xeon Phi </h1> 
+                    </div>
+
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="article-post">
+                        <p>This past June at ISC 2013 the IBM booth featured live demonstration of IBM
+Platform HPC V3.2 managing an IBM iDataplex cluster equipped with Intel Xeon
+Phi coprocessors.</p>
+<p>As part of the demonstration, the potential performance gains running an
+application on Intel Xeon Phi coprocessors was shown by running the visually
+stunning <a href="https://software.intel.com/en-us/articles/embree-photo-realistic-ray-tracing-kernels">Intel Embree</a> <em>crown</em> rendering on Intel Xeon and Intel Xeon
+Phi simultaneously.</p>
+<p>IBM Platform HPC provides a unified web-based interface for deployment and
+managment of the cluster.  Additionally, it includes application submission
+templates to allow administrators the flexiblity to create templates to greatly simplify the submission of jobs for their users.  A number of templates for
+well known ISV and open source applications are also included as standard.
+For ISC, a template was created to allow Intel Embree to be easily launched
+through the built-in workload manager for execution on Intel Xeon or
+Intel Xeon Phi coprocessors.</p>
+<p>Finally, when the processor intensive Intel Embree application was running,
+the monitoring and reporting capabilities of IBM Platform HPC provided both
+real time and historical reporting on the health of each node in the cluster,
+including metrics specific to the Intel Xeon Phi coprocessor such as
+temperature, power consumption and utilization - all through a consistent
+web-based interface.</p>
+<p>Enjoy the short video of the demo here.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/J7I6Cw0DkCI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+                    </div>
+                    
+                    
+                    <div class="after-post-tags">
+                        <ul class="tags">
+                        
+                        <li>
+                        <a href="/tags/isc">ISC</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/hpc">HPC</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/lsf">LSF</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/embree">embree</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/xeon-phi">Xeon Phi</a>
+                        </li>
+                        
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                    
+                        <a class="d-block col-md-6" href="http://gpsamu.github.io/blog/hpc411_bridge/"> &laquo; IBM Platform HPC 4.1.1: Creating a network bridge on compute nodes</a>
+                    
+                    
+                        <a class="d-block col-md-6 text-lg-right" href="http://gpsamu.github.io/blog/hpc32_cuda/">IBM Platform HPC V3.2: GPU Management with NVIDIA CUDA 5 &raquo;</a>
+                    
+                    <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+            </div>
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+			<div class="d-md-flex align-items-center justify-content-center h-100">
+				<h2 class="d-md-block d-none align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+			</div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+			
+			<a class="mt-1 mb-1" href="/tags/8040">8040</a>
+			
+			<a class="mt-1 mb-1" href="/tags/acorn">acorn</a>
+			
+			<a class="mt-1 mb-1" href="/tags/amiga">amiga</a>
+			
+			<a class="mt-1 mb-1" href="/tags/archimedes">archimedes</a>
+			
+			<a class="mt-1 mb-1" href="/tags/arm">arm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/arm-v8">arm-v8</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armada">armada</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armada8040">armada8040</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armv7">armv7</a>
+			
+			<a class="mt-1 mb-1" href="/tags/batch">batch</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cluster">cluster</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cluster-manager">cluster-manager</a>
+			
+			<a class="mt-1 mb-1" href="/tags/commodoreamiga">commodoreamiga</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cuda">cuda</a>
+			
+			<a class="mt-1 mb-1" href="/tags/dashboard">dashboard</a>
+			
+			<a class="mt-1 mb-1" href="/tags/dcgm">dcgm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/docker">docker</a>
+			
+			<a class="mt-1 mb-1" href="/tags/embree">embree</a>
+			
+			<a class="mt-1 mb-1" href="/tags/frankfurt">frankfurt</a>
+			
+			<a class="mt-1 mb-1" href="/tags/gpu">gpu</a>
+			
+			<a class="mt-1 mb-1" href="/tags/handheld-pc">handheld-pc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/hpc">hpc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/hpl">hpl</a>
+			
+			<a class="mt-1 mb-1" href="/tags/i.mx6">i.mx6</a>
+			
+			<a class="mt-1 mb-1" href="/tags/ibm">ibm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/infrastructure">infrastructure</a>
+			
+			<a class="mt-1 mb-1" href="/tags/isc">isc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/job-scheduling">job-scheduling</a>
+			
+			<a class="mt-1 mb-1" href="/tags/kepler">kepler</a>
+			
+			<a class="mt-1 mb-1" href="/tags/kits">kits</a>
+			
+			<a class="mt-1 mb-1" href="/tags/linpack">linpack</a>
+			
+			<a class="mt-1 mb-1" href="/tags/lsf">lsf</a>
+			
+			<a class="mt-1 mb-1" href="/tags/macchiatobin">macchiatobin</a>
+			
+			<a class="mt-1 mb-1" href="/tags/marvell">marvell</a>
+			
+			<a class="mt-1 mb-1" href="/tags/mips">mips</a>
+			
+			<a class="mt-1 mb-1" href="/tags/monitoring">monitoring</a>
+			
+			<a class="mt-1 mb-1" href="/tags/netbsd">netbsd</a>
+			
+			<a class="mt-1 mb-1" href="/tags/network-bridge">network-bridge</a>
+			
+			<a class="mt-1 mb-1" href="/tags/nvidia">nvidia</a>
+			
+			<a class="mt-1 mb-1" href="/tags/olivetti">olivetti</a>
+			
+			<a class="mt-1 mb-1" href="/tags/openpower">openpower</a>
+			
+			<a class="mt-1 mb-1" href="/tags/platform">platform</a>
+			
+			<a class="mt-1 mb-1" href="/tags/platform-hpc">platform-hpc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/power-systems">power-systems</a>
+			
+			<a class="mt-1 mb-1" href="/tags/power8">power8</a>
+			
+			<a class="mt-1 mb-1" href="/tags/road-trip">road-trip</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sc13">sc13</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sc16">sc16</a>
+			
+			<a class="mt-1 mb-1" href="/tags/scale-out">scale-out</a>
+			
+			<a class="mt-1 mb-1" href="/tags/scheduler">scheduler</a>
+			
+			<a class="mt-1 mb-1" href="/tags/solaris">solaris</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sparc">sparc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/supercomputing">supercomputing</a>
+			
+			<a class="mt-1 mb-1" href="/tags/technical-computing">technical-computing</a>
+			
+			<a class="mt-1 mb-1" href="/tags/tesla">tesla</a>
+			
+			<a class="mt-1 mb-1" href="/tags/udoo-quad">udoo-quad</a>
+			
+			<a class="mt-1 mb-1" href="/tags/ultrasparc">ultrasparc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/unix">unix</a>
+			
+			<a class="mt-1 mb-1" href="/tags/v100">v100</a>
+			
+			<a class="mt-1 mb-1" href="/tags/workflow">workflow</a>
+			
+			<a class="mt-1 mb-1" href="/tags/workpad-z50">workpad-z50</a>
+			
+			<a class="mt-1 mb-1" href="/tags/xcat">xcat</a>
+			
+			<a class="mt-1 mb-1" href="/tags/xeon-phi">xeon-phi</a>
+			
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright Gábor Samu - All rights reserved
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" rel="noopener" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/mediumish.js"></script>
+
+    </body>
+</html>

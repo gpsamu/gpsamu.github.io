@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dcgm on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/dcgm/</link>
+    <description>Recent content in dcgm on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Mon, 01 Oct 2018 21:21:37 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/dcgm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GPU usage information for jobs in IBM Spectrum LSF</title>
+      <link>http://gpsamu.github.io/blog/spectrumlsf_gpu_usage/</link>
+      <pubDate>Mon, 01 Oct 2018 21:21:37 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/spectrumlsf_gpu_usage/</guid>
+      <description>In my last blog, we ran through an example showing how IBM Spectrum LSF now automatically detects the presence of NVIDIA GPUs on hosts in the cluster and performs the necessary configuration of the scheduler automatically.</description>
+    </item>
+    
+  </channel>
+</rss>

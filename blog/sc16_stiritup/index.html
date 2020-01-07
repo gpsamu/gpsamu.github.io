@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="UTF-8"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="Hugo 0.61.0-DEV" />
+	
+	<link rel="icon" href="/images/virag.png">
+	
+	<title>SC16: Stir it up! | Technical Computing Goulash</title>
+	
+	
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SC16: Stir it up!"/>
+<meta name="twitter:description" content="It&#39;s been ages since I&#39;ve posted to this blog. I&#39;ve not forgotten about it - I&#39;ve been figuratively stirring the technical computing goulash pot over on the IBM Systems In the Making blog."/>
+
+	<meta property="og:title" content="SC16: Stir it up!" />
+<meta property="og:description" content="It&#39;s been ages since I&#39;ve posted to this blog. I&#39;ve not forgotten about it - I&#39;ve been figuratively stirring the technical computing goulash pot over on the IBM Systems In the Making blog." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gpsamu.github.io/blog/sc16_stiritup/" />
+<meta property="article:published_time" content="2016-11-10T19:54:36-05:00" />
+<meta property="article:modified_time" content="2016-11-10T19:54:36-05:00" />
+
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="http://gpsamu.github.io/">
+
+            
+            <img src="/images/virag.png" alt="logo">
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">About Me</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+<div class="mainheading">
+    <h1 class="sitetitle">Technical Computing Goulash</h1>
+    <p class="lead">
+         Miscellaneous ramblings about High Performance Computing (HPC), supercomputing and other tech.
+    </p>
+</div><div class="main-content">
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=SC16%3a%20Stir%20it%20up%21&url=http%3a%2f%2fgpsamu.github.io%2fblog%2fsc16_stiritup%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+
+    </ul>
+
+    
+</div>
+</div>
+                                
+                <div class="col-md-9 flex-first flex-md-unordered">
+                    <div class="mainheading">
+                        	
+                        
+                        
+                        
+                        <div class="row post-top-meta">
+                            <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0 md-nopad-right">
+                                <img class="author-thumb" src="/images/gpsamu.png" alt="Gábor Samu">
+                            </div>
+                            <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
+                                <a target="_blank" class="link-dark">Gábor Samu</a><br>
+                                <span class="author-description">
+                                    Creator of this blog.<br>
+                                    <i class="far fa-star"></i>
+                                    Nov 10, 2016
+                                    <i class="far fa-clock clock"></i>
+                                    3 min read
+                                </span>					
+                            </div>
+                        </div>			
+                        	
+                        
+                                                
+                        
+                        <h1 class="posttitle">SC16: Stir it up!</h1> 
+                    </div>
+
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="article-post">
+                        <p>It's been ages since I've posted to this blog. I've not forgotten about it - I've been
+figuratively stirring the technical computing goulash pot over on the IBM Systems
+In the Making <a href="https://www.ibm.com/blogs/systems/author/gabor-samu/">blog</a>.</p>
+<p>Having recently moved house, all of the old classic and newer Arm based systems that I've
+written about previously are still mostly packed away. My hands have been more focused on
+home improvement rather than tinkering. As those in HPC circles will know, the annual
+Supercomputing <a href="http://sc16.supercomputing.org/">SC16</a> event starts this coming Sunday in Salt Lake City, UT.
+Interestingly, if my memory serves me well the last time we were in Salt Lake City for <a href="http://sc12.supercomputing.org/">SC12</a>,
+I was a newbie with IBM, having joined as a result of the acquisition of Platform Computing.</p>
+<p>The HPC landscape has changed quite a bit since then, including the divestiture of the IBM
+x86 server business to Lenovo and the birth of the OpenPOWER Foundation. The OpenPOWER
+Foundation has gone from baby steps to sprinting with a huge and diverse group of members
+from accelerators, interconnects, research organizations and more - all united on a common
+goal - to drive innovation and change in enterprise computing and HPC via the OpenPOWER
+platform. It's like somebody has taken a big wooden spoon and stirred the goulash in the
+pot - because we all know that if things stand still for too long in the pot, it's going to
+burn.</p>
+<p>As I've banged on about in previous blogs, I'm more pleased than ever to see this explosion
+of diversity in HPC from A(RM), P(OWER) to X(86). When you throw accelerators such as FPGAs,
+GPUs into the mix, what is needed more than ever to address this complexity in diverse
+environments is a software defined approach - which hides this complexity from
+the users and allows them to leverage the power of todays environments.</p>
+<p><a href="https://www.ibm.com/us-en/marketplace/hpc-workload-management">IBM Spectrum LSF</a> (formerly Platform LSF) has been making this possible for over 20 years. A
+glance at the OS and platform support <a href="https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/New%20IBM%20Platform%20LSF%20Wiki/page/LSF%20system%20requirements">list</a> illustrates the breadth and depth of OS and
+processor support.  Not only does IBM Spectrum LSF make tying together heterogeneous
+resources easy, it's proven technology allows organizations to share resources on a global
+scale.  In fact, the latest IBM Spectrum LSF V10 release from June 2016 contained contained
+numerous enhancements all focused on improving the productivity the users of HPC and
+controlling costs.  Read more in this top 10 cool things about IBM Spectrum LSF blog. And
+looking beyond HPC, the IBM Spectrum Computing family of products helps provide advanced
+resource management capabilities for diverse workloads including Hadoop, Spark.</p>
+<p>Yours truly will be in Salt Lake City for SC16. Drop by booth 1018 to talk about how IBM
+software defined computing can help your organization. IBM will be holding a number of user
+groups and seminars covering the broad spectrum of IBM solutions for HPC. And for IBM
+Spectrum LSF users, we'll be holding our annual user group, where you can hear how
+your peers are using IBM Spectrum LSF to get an advantage, and learn about the latest
+developments in IBM Spectrum LSF from our experts.</p>
+<p>Come on and stir it up! You'll like it!</p>
+
+                    </div>
+                    
+                    
+                    <div class="after-post-tags">
+                        <ul class="tags">
+                        
+                        <li>
+                        <a href="/tags/sc16">sc16</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/lsf">lsf</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/technical-computing">technical computing</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/supercomputing">supercomputing</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/hpc">hpc</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/openpower">openpower</a>
+                        </li>
+                        
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                    
+                        <a class="d-block col-md-6" href="http://gpsamu.github.io/blog/woe_is_2016/"> &laquo; Oh Woe is 2016 - NOT!</a>
+                    
+                    
+                        <a class="d-block col-md-6 text-lg-right" href="http://gpsamu.github.io/blog/reminiscing_computingrenaissance/">Reminiscing and the computing renaissance &raquo;</a>
+                    
+                    <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+            </div>
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+			<div class="d-md-flex align-items-center justify-content-center h-100">
+				<h2 class="d-md-block d-none align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+			</div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+			
+			<a class="mt-1 mb-1" href="/tags/8040">8040</a>
+			
+			<a class="mt-1 mb-1" href="/tags/acorn">acorn</a>
+			
+			<a class="mt-1 mb-1" href="/tags/amiga">amiga</a>
+			
+			<a class="mt-1 mb-1" href="/tags/archimedes">archimedes</a>
+			
+			<a class="mt-1 mb-1" href="/tags/arm">arm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/arm-v8">arm-v8</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armada">armada</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armada8040">armada8040</a>
+			
+			<a class="mt-1 mb-1" href="/tags/armv7">armv7</a>
+			
+			<a class="mt-1 mb-1" href="/tags/batch">batch</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cluster">cluster</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cluster-manager">cluster-manager</a>
+			
+			<a class="mt-1 mb-1" href="/tags/commodoreamiga">commodoreamiga</a>
+			
+			<a class="mt-1 mb-1" href="/tags/cuda">cuda</a>
+			
+			<a class="mt-1 mb-1" href="/tags/dashboard">dashboard</a>
+			
+			<a class="mt-1 mb-1" href="/tags/dcgm">dcgm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/docker">docker</a>
+			
+			<a class="mt-1 mb-1" href="/tags/embree">embree</a>
+			
+			<a class="mt-1 mb-1" href="/tags/frankfurt">frankfurt</a>
+			
+			<a class="mt-1 mb-1" href="/tags/gpu">gpu</a>
+			
+			<a class="mt-1 mb-1" href="/tags/handheld-pc">handheld-pc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/hpc">hpc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/hpl">hpl</a>
+			
+			<a class="mt-1 mb-1" href="/tags/i.mx6">i.mx6</a>
+			
+			<a class="mt-1 mb-1" href="/tags/ibm">ibm</a>
+			
+			<a class="mt-1 mb-1" href="/tags/infrastructure">infrastructure</a>
+			
+			<a class="mt-1 mb-1" href="/tags/isc">isc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/job-scheduling">job-scheduling</a>
+			
+			<a class="mt-1 mb-1" href="/tags/kepler">kepler</a>
+			
+			<a class="mt-1 mb-1" href="/tags/kits">kits</a>
+			
+			<a class="mt-1 mb-1" href="/tags/linpack">linpack</a>
+			
+			<a class="mt-1 mb-1" href="/tags/lsf">lsf</a>
+			
+			<a class="mt-1 mb-1" href="/tags/macchiatobin">macchiatobin</a>
+			
+			<a class="mt-1 mb-1" href="/tags/marvell">marvell</a>
+			
+			<a class="mt-1 mb-1" href="/tags/mips">mips</a>
+			
+			<a class="mt-1 mb-1" href="/tags/monitoring">monitoring</a>
+			
+			<a class="mt-1 mb-1" href="/tags/netbsd">netbsd</a>
+			
+			<a class="mt-1 mb-1" href="/tags/network-bridge">network-bridge</a>
+			
+			<a class="mt-1 mb-1" href="/tags/nvidia">nvidia</a>
+			
+			<a class="mt-1 mb-1" href="/tags/olivetti">olivetti</a>
+			
+			<a class="mt-1 mb-1" href="/tags/openpower">openpower</a>
+			
+			<a class="mt-1 mb-1" href="/tags/platform">platform</a>
+			
+			<a class="mt-1 mb-1" href="/tags/platform-hpc">platform-hpc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/power-systems">power-systems</a>
+			
+			<a class="mt-1 mb-1" href="/tags/power8">power8</a>
+			
+			<a class="mt-1 mb-1" href="/tags/road-trip">road-trip</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sc13">sc13</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sc16">sc16</a>
+			
+			<a class="mt-1 mb-1" href="/tags/scale-out">scale-out</a>
+			
+			<a class="mt-1 mb-1" href="/tags/scheduler">scheduler</a>
+			
+			<a class="mt-1 mb-1" href="/tags/solaris">solaris</a>
+			
+			<a class="mt-1 mb-1" href="/tags/sparc">sparc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/supercomputing">supercomputing</a>
+			
+			<a class="mt-1 mb-1" href="/tags/technical-computing">technical-computing</a>
+			
+			<a class="mt-1 mb-1" href="/tags/tesla">tesla</a>
+			
+			<a class="mt-1 mb-1" href="/tags/udoo-quad">udoo-quad</a>
+			
+			<a class="mt-1 mb-1" href="/tags/ultrasparc">ultrasparc</a>
+			
+			<a class="mt-1 mb-1" href="/tags/unix">unix</a>
+			
+			<a class="mt-1 mb-1" href="/tags/v100">v100</a>
+			
+			<a class="mt-1 mb-1" href="/tags/workflow">workflow</a>
+			
+			<a class="mt-1 mb-1" href="/tags/workpad-z50">workpad-z50</a>
+			
+			<a class="mt-1 mb-1" href="/tags/xcat">xcat</a>
+			
+			<a class="mt-1 mb-1" href="/tags/xeon-phi">xeon-phi</a>
+			
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright Gábor Samu - All rights reserved
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" rel="noopener" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/mediumish.js"></script>
+
+    </body>
+</html>

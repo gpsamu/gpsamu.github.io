@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/docker/</link>
+    <description>Recent content in docker on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Thu, 28 May 2015 21:49:58 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IBM Platform LSF and Docker: A Whale of a time!</title>
+      <link>http://gpsamu.github.io/blog/lsf_docker_whale/</link>
+      <pubDate>Thu, 28 May 2015 21:49:58 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/lsf_docker_whale/</guid>
+      <description>Containers are useful. Whether you&#39;re shipping things across the blue seas or encapsulating applications on a computer system, they provide numerous benefits. HPC Administrators will know that applications today can depend upon multiple packages, libraries and environments.</description>
+    </item>
+    
+    <item>
+      <title>Docker for HPC</title>
+      <link>http://gpsamu.github.io/blog/docker_for_hpc/</link>
+      <pubDate>Fri, 05 Sep 2014 10:21:11 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/docker_for_hpc/</guid>
+      <description>With the recent release of Docker 1.0 and the broad industry backing from organizations such as Red Hat and IBM, it&#39;s no wonder that interest in the use and application of this Linux container technology continues to grow.</description>
+    </item>
+    
+  </channel>
+</rss>

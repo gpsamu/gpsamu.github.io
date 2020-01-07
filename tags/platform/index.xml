@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>platform on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/platform/</link>
+    <description>Recent content in platform on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Fri, 20 Dec 2013 13:35:22 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/platform/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IBM Platform HPC V4.1.1.1: Best Practices for Managing NVIDIA GPU devices</title>
+      <link>http://gpsamu.github.io/blog/hpc411_nvidia/</link>
+      <pubDate>Fri, 20 Dec 2013 13:35:22 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/hpc411_nvidia/</guid>
+      <description>Summary
+IBM Platform HPC V4.1.1.1 is easy-to-use, yet comprehensive technical computing infrastructure management software. It includes as standard GPU management capabilities including monitoring and workload scheduling for systems equipped with NVIDIA GPU devices.</description>
+    </item>
+    
+  </channel>
+</rss>

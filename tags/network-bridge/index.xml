@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>network bridge on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/network-bridge/</link>
+    <description>Recent content in network bridge on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Wed, 09 Oct 2013 13:12:15 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/network-bridge/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IBM Platform HPC 4.1.1: Creating a network bridge on compute nodes</title>
+      <link>http://gpsamu.github.io/blog/hpc411_bridge/</link>
+      <pubDate>Wed, 09 Oct 2013 13:12:15 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/hpc411_bridge/</guid>
+      <description>Applies to
+ IBM Platform HPC V4.1.1 IBM Platform Cluster Manager V4.1.1  Introduction
+IBM Platform HPC provides the ability to customise the network configuration of compute nodes via Network Profiles.</description>
+    </item>
+    
+  </channel>
+</rss>

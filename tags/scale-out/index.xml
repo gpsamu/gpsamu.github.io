@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scale-out on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/scale-out/</link>
+    <description>Recent content in scale-out on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Sat, 06 Jun 2015 21:42:03 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/scale-out/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IBM Platform Cluster Manager - how do you like your eggs?</title>
+      <link>http://gpsamu.github.io/blog/clustermanager_eggs/</link>
+      <pubDate>Sat, 06 Jun 2015 21:42:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/clustermanager_eggs/</guid>
+      <description>Whether your HPC center is in Lilliput or Blefuscu, you&#39;ll appreciate the importance of a flexible and easy-to-use cluster management solution to empower your populations. Administrators need software that will allow them to easily setup, manage, monitor and maintain their infrastructure and ensure consistency for repeatable performance.</description>
+    </item>
+    
+  </channel>
+</rss>

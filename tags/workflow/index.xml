@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>workflow on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/workflow/</link>
+    <description>Recent content in workflow on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Tue, 28 Jul 2015 21:08:23 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Looking back at ISC High-Performance 2015</title>
+      <link>http://gpsamu.github.io/blog/isc15_lookingback/</link>
+      <pubDate>Tue, 28 Jul 2015 21:08:23 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/isc15_lookingback/</guid>
+      <description>I&#39;ve always enjoyed a good road trip. There&#39;s just something fun about jumping in the car, and heading to a far off location. As they say, half of the fun is just getting to your destination.</description>
+    </item>
+    
+  </channel>
+</rss>

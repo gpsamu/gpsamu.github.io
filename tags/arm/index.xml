@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arm on Technical Computing Goulash</title>
+    <link>http://gpsamu.github.io/tags/arm/</link>
+    <description>Recent content in Arm on Technical Computing Goulash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>UTF-8</language>
+    <copyright>Gábor Samu - All rights reserved</copyright>
+    <lastBuildDate>Fri, 15 Sep 2017 11:37:03 -0500</lastBuildDate>
+    
+	<atom:link href="http://gpsamu.github.io/tags/arm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cool and quiet benchmarking on MACCHIATObin (Armada 8040)</title>
+      <link>http://gpsamu.github.io/blog/benchmarking_macchiatobin/</link>
+      <pubDate>Fri, 15 Sep 2017 11:37:03 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/benchmarking_macchiatobin/</guid>
+      <description>I&#39;ve recently taken delivery of a few new goodies to complement the MACCHIATObin Arm v8 powered board that I&#39;ve written about recently on my blog.</description>
+    </item>
+    
+    <item>
+      <title>Standing up a IBM Spectrum LSF Community Edition cluster on Arm v8</title>
+      <link>http://gpsamu.github.io/blog/spectrumlsf_armv8/</link>
+      <pubDate>Thu, 31 Aug 2017 12:01:46 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/spectrumlsf_armv8/</guid>
+      <description>So, you&#39;ve got yourself a shiny new (or maybe not) system based upon a 64-bit Arm (Arm v8) processor that you want to put through it&#39;s paces.</description>
+    </item>
+    
+    <item>
+      <title>Looking forward from the ARM days of old</title>
+      <link>http://gpsamu.github.io/blog/arm_days_of_old/</link>
+      <pubDate>Thu, 13 Mar 2014 11:29:42 -0500</pubDate>
+      
+      <guid>http://gpsamu.github.io/blog/arm_days_of_old/</guid>
+      <description>These days we often hear about CPUs based upon ARM cores. They can be found in mobile phones, embedded systems, laptops and even servers. Indeed, projects such as Mont Blanc are investigating the use of ARM based systems for high performance computing (HPC).</description>
+    </item>
+    
+  </channel>
+</rss>
