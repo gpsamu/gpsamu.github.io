@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Solaris on Technical Computing Goulash</title>
-    <link>http://gpsamu.github.io/tags/solaris/</link>
+    <link>http://www.gaborsamu.com/tags/solaris/</link>
     <description>Recent content in Solaris on Technical Computing Goulash</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
     <copyright>Gábor Samu - All rights reserved</copyright>
     <lastBuildDate>Fri, 30 Jan 2015 10:07:57 -0500</lastBuildDate>
     
-	<atom:link href="http://gpsamu.github.io/tags/solaris/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.gaborsamu.com/tags/solaris/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>UltraSPARC powered laptop - circa 2001 </title>
-      <link>http://gpsamu.github.io/blog/ultrasparc_laptop/</link>
+      <link>http://www.gaborsamu.com/blog/ultrasparc_laptop/</link>
       <pubDate>Fri, 30 Jan 2015 10:07:57 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/ultrasparc_laptop/</guid>
+      <guid>http://www.gaborsamu.com/blog/ultrasparc_laptop/</guid>
       <description>It’s been ages since my last blog. What better way to start off the new year then by looking at the past. In this case, let’s wind the clock all the way back to 2001.</description>
     </item>
     

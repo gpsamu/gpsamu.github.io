@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Platform HPC on Technical Computing Goulash</title>
-    <link>http://gpsamu.github.io/tags/platform-hpc/</link>
+    <link>http://www.gaborsamu.com/tags/platform-hpc/</link>
     <description>Recent content in Platform HPC on Technical Computing Goulash</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
     <copyright>Gábor Samu - All rights reserved</copyright>
     <lastBuildDate>Wed, 24 Apr 2013 12:32:15 -0500</lastBuildDate>
     
-	<atom:link href="http://gpsamu.github.io/tags/platform-hpc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.gaborsamu.com/tags/platform-hpc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>IBM Platform HPC V3.2: GPU Management with NVIDIA CUDA 5</title>
-      <link>http://gpsamu.github.io/blog/hpc32_cuda/</link>
+      <link>http://www.gaborsamu.com/blog/hpc32_cuda/</link>
       <pubDate>Wed, 24 Apr 2013 12:32:15 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/hpc32_cuda/</guid>
+      <guid>http://www.gaborsamu.com/blog/hpc32_cuda/</guid>
       <description>IBM Platform HPC V3.2 is easy-to-use, yet comprehensive technical computing cluster management software. It includes as standard GPU scheduling, managementand monitoring capabilities for systems equipped with NVIDIA Tesla GPUs.</description>
     </item>
     

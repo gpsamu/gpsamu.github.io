@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>commodoreamiga on Technical Computing Goulash</title>
-    <link>http://gpsamu.github.io/tags/commodoreamiga/</link>
+    <link>http://www.gaborsamu.com/tags/commodoreamiga/</link>
     <description>Recent content in commodoreamiga on Technical Computing Goulash</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
     <copyright>Gábor Samu - All rights reserved</copyright>
     <lastBuildDate>Fri, 01 Apr 2016 20:44:49 -0500</lastBuildDate>
     
-	<atom:link href="http://gpsamu.github.io/tags/commodoreamiga/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.gaborsamu.com/tags/commodoreamiga/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Reminiscing and the computing renaissance</title>
-      <link>http://gpsamu.github.io/blog/reminiscing_computingrenaissance/</link>
+      <link>http://www.gaborsamu.com/blog/reminiscing_computingrenaissance/</link>
       <pubDate>Fri, 01 Apr 2016 20:44:49 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/reminiscing_computingrenaissance/</guid>
+      <guid>http://www.gaborsamu.com/blog/reminiscing_computingrenaissance/</guid>
       <description>Sifting through boxes of 3.5 inch floppy diskettes - some of questionable provenance in a dusty basement. Gingerly packing up what I consider to be the holy trinity of Commodore Amiga computers - A1000, A2000, A3000 - all in some state of working condition.</description>
     </item>
     

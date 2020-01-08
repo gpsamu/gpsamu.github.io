@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>armv7 on Technical Computing Goulash</title>
-    <link>http://gpsamu.github.io/tags/armv7/</link>
+    <link>http://www.gaborsamu.com/tags/armv7/</link>
     <description>Recent content in armv7 on Technical Computing Goulash</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
     <copyright>Gábor Samu - All rights reserved</copyright>
     <lastBuildDate>Fri, 11 Apr 2014 10:39:53 -0500</lastBuildDate>
     
-	<atom:link href="http://gpsamu.github.io/tags/armv7/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.gaborsamu.com/tags/armv7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Armed and ready with IBM Platform LSF</title>
-      <link>http://gpsamu.github.io/blog/armed_ready_lsf/</link>
+      <link>http://www.gaborsamu.com/blog/armed_ready_lsf/</link>
       <pubDate>Fri, 11 Apr 2014 10:39:53 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/armed_ready_lsf/</guid>
+      <guid>http://www.gaborsamu.com/blog/armed_ready_lsf/</guid>
       <description>These days it&#39;s not uncommon to hear about CPUs based upon ARM cores. They can be found in mobile phones, embedded systems, laptops and even servers.</description>
     </item>
     

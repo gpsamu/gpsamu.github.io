@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>openpower on Technical Computing Goulash</title>
-    <link>http://gpsamu.github.io/tags/openpower/</link>
+    <link>http://www.gaborsamu.com/tags/openpower/</link>
     <description>Recent content in openpower on Technical Computing Goulash</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
     <copyright>Gábor Samu - All rights reserved</copyright>
     <lastBuildDate>Mon, 09 Jan 2017 16:17:58 -0500</lastBuildDate>
     
-	<atom:link href="http://gpsamu.github.io/tags/openpower/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.gaborsamu.com/tags/openpower/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Oh Woe is 2016 - NOT!</title>
-      <link>http://gpsamu.github.io/blog/woe_is_2016/</link>
+      <link>http://www.gaborsamu.com/blog/woe_is_2016/</link>
       <pubDate>Mon, 09 Jan 2017 16:17:58 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/woe_is_2016/</guid>
+      <guid>http://www.gaborsamu.com/blog/woe_is_2016/</guid>
       <description>As we enter a new year, 2016 seems to have been tarnished it the closing month by events around the world. Far be it for me to to talk about world events here, I’d like to focus on the good - at least from my perspective.</description>
     </item>
     
     <item>
       <title>SC16: Stir it up!</title>
-      <link>http://gpsamu.github.io/blog/sc16_stiritup/</link>
+      <link>http://www.gaborsamu.com/blog/sc16_stiritup/</link>
       <pubDate>Thu, 10 Nov 2016 19:54:36 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/sc16_stiritup/</guid>
+      <guid>http://www.gaborsamu.com/blog/sc16_stiritup/</guid>
       <description>It&#39;s been ages since I&#39;ve posted to this blog. I&#39;ve not forgotten about it - I&#39;ve been figuratively stirring the technical computing goulash pot over on the IBM Systems In the Making blog.</description>
     </item>
     
     <item>
       <title>Reminiscing and the computing renaissance</title>
-      <link>http://gpsamu.github.io/blog/reminiscing_computingrenaissance/</link>
+      <link>http://www.gaborsamu.com/blog/reminiscing_computingrenaissance/</link>
       <pubDate>Fri, 01 Apr 2016 20:44:49 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/reminiscing_computingrenaissance/</guid>
+      <guid>http://www.gaborsamu.com/blog/reminiscing_computingrenaissance/</guid>
       <description>Sifting through boxes of 3.5 inch floppy diskettes - some of questionable provenance in a dusty basement. Gingerly packing up what I consider to be the holy trinity of Commodore Amiga computers - A1000, A2000, A3000 - all in some state of working condition.</description>
     </item>
     
     <item>
       <title>Looking back at ISC High-Performance 2015</title>
-      <link>http://gpsamu.github.io/blog/isc15_lookingback/</link>
+      <link>http://www.gaborsamu.com/blog/isc15_lookingback/</link>
       <pubDate>Tue, 28 Jul 2015 21:08:23 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/isc15_lookingback/</guid>
+      <guid>http://www.gaborsamu.com/blog/isc15_lookingback/</guid>
       <description>I&#39;ve always enjoyed a good road trip. There&#39;s just something fun about jumping in the car, and heading to a far off location. As they say, half of the fun is just getting to your destination.</description>
     </item>
     
     <item>
       <title>IBM Software Defined Infrastructure: Put the POWER down and jump the chasm! </title>
-      <link>http://gpsamu.github.io/blog/sdi_openpower/</link>
+      <link>http://www.gaborsamu.com/blog/sdi_openpower/</link>
       <pubDate>Wed, 13 May 2015 09:24:34 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/sdi_openpower/</guid>
+      <guid>http://www.gaborsamu.com/blog/sdi_openpower/</guid>
       <description>OpenPOWER continues to put the power down and accelerate strongly in 2015.
 Earlier this year, the First Annual OpenPOWER Summit took place and more recently Cabot Partners published the paper Crossing the Performance Chasm with OpenPOWER, outlining the benefits of OpenPOWER for HPC.</description>
     </item>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>scheduler on Technical Computing Goulash</title>
-    <link>http://gpsamu.github.io/tags/scheduler/</link>
+    <link>http://www.gaborsamu.com/tags/scheduler/</link>
     <description>Recent content in scheduler on Technical Computing Goulash</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
     <copyright>Gábor Samu - All rights reserved</copyright>
     <lastBuildDate>Thu, 31 Aug 2017 12:01:46 -0500</lastBuildDate>
     
-	<atom:link href="http://gpsamu.github.io/tags/scheduler/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.gaborsamu.com/tags/scheduler/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Standing up a IBM Spectrum LSF Community Edition cluster on Arm v8</title>
-      <link>http://gpsamu.github.io/blog/spectrumlsf_armv8/</link>
+      <link>http://www.gaborsamu.com/blog/spectrumlsf_armv8/</link>
       <pubDate>Thu, 31 Aug 2017 12:01:46 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/spectrumlsf_armv8/</guid>
+      <guid>http://www.gaborsamu.com/blog/spectrumlsf_armv8/</guid>
       <description>So, you&#39;ve got yourself a shiny new (or maybe not) system based upon a 64-bit Arm (Arm v8) processor that you want to put through it&#39;s paces.</description>
     </item>
     

@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ISC on Technical Computing Goulash</title>
-    <link>http://gpsamu.github.io/tags/isc/</link>
+    <link>http://www.gaborsamu.com/tags/isc/</link>
     <description>Recent content in ISC on Technical Computing Goulash</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
     <copyright>Gábor Samu - All rights reserved</copyright>
     <lastBuildDate>Tue, 28 Jul 2015 21:08:23 -0500</lastBuildDate>
     
-	<atom:link href="http://gpsamu.github.io/tags/isc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.gaborsamu.com/tags/isc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Looking back at ISC High-Performance 2015</title>
-      <link>http://gpsamu.github.io/blog/isc15_lookingback/</link>
+      <link>http://www.gaborsamu.com/blog/isc15_lookingback/</link>
       <pubDate>Tue, 28 Jul 2015 21:08:23 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/isc15_lookingback/</guid>
+      <guid>http://www.gaborsamu.com/blog/isc15_lookingback/</guid>
       <description>I&#39;ve always enjoyed a good road trip. There&#39;s just something fun about jumping in the car, and heading to a far off location. As they say, half of the fun is just getting to your destination.</description>
     </item>
     
     <item>
       <title>ISC 2014: Auf Wiedersehen Leipzig</title>
-      <link>http://gpsamu.github.io/blog/isc14_leipzig/</link>
+      <link>http://www.gaborsamu.com/blog/isc14_leipzig/</link>
       <pubDate>Sat, 28 Jun 2014 10:24:51 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/isc14_leipzig/</guid>
+      <guid>http://www.gaborsamu.com/blog/isc14_leipzig/</guid>
       <description>I&#39;ve just returned from International Supercomputing 2014, which took place in Leipzig, Germany. As was the case in 2013, I greatly enjoyed my time at the conference, and the hospitality in Leipzig.</description>
     </item>
     
     <item>
       <title>ISC 2013 wrapup: IBM Platform HPC and Intel Xeon Phi </title>
-      <link>http://gpsamu.github.io/blog/isc13_wrapup/</link>
+      <link>http://www.gaborsamu.com/blog/isc13_wrapup/</link>
       <pubDate>Tue, 09 Jul 2013 11:58:32 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/isc13_wrapup/</guid>
+      <guid>http://www.gaborsamu.com/blog/isc13_wrapup/</guid>
       <description>This past June at ISC 2013 the IBM booth featured live demonstration of IBM Platform HPC V3.2 managing an IBM iDataplex cluster equipped with Intel Xeon Phi coprocessors.</description>
     </item>
     

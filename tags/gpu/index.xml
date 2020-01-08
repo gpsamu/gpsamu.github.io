@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GPU on Technical Computing Goulash</title>
-    <link>http://gpsamu.github.io/tags/gpu/</link>
-    <description>Recent content in GPU on Technical Computing Goulash</description>
+    <title>gpu on Technical Computing Goulash</title>
+    <link>http://www.gaborsamu.com/tags/gpu/</link>
+    <description>Recent content in gpu on Technical Computing Goulash</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
     <copyright>Gábor Samu - All rights reserved</copyright>
     <lastBuildDate>Mon, 01 Oct 2018 21:21:37 -0500</lastBuildDate>
     
-	<atom:link href="http://gpsamu.github.io/tags/gpu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.gaborsamu.com/tags/gpu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GPU usage information for jobs in IBM Spectrum LSF</title>
-      <link>http://gpsamu.github.io/blog/spectrumlsf_gpu_usage/</link>
+      <link>http://www.gaborsamu.com/blog/spectrumlsf_gpu_usage/</link>
       <pubDate>Mon, 01 Oct 2018 21:21:37 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/spectrumlsf_gpu_usage/</guid>
+      <guid>http://www.gaborsamu.com/blog/spectrumlsf_gpu_usage/</guid>
       <description>In my last blog, we ran through an example showing how IBM Spectrum LSF now automatically detects the presence of NVIDIA GPUs on hosts in the cluster and performs the necessary configuration of the scheduler automatically.</description>
     </item>
     
     <item>
       <title>A quick, hands on look at GPU &#34;autoconfig&#34; in IBM Spectrum LSF</title>
-      <link>http://gpsamu.github.io/blog/spectrumlsf_gpu_autoconfig/</link>
+      <link>http://www.gaborsamu.com/blog/spectrumlsf_gpu_autoconfig/</link>
       <pubDate>Fri, 14 Sep 2018 10:38:29 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/spectrumlsf_gpu_autoconfig/</guid>
+      <guid>http://www.gaborsamu.com/blog/spectrumlsf_gpu_autoconfig/</guid>
       <description>It&#39;s been a long time since I&#39;ve posted to my goulash blog. I&#39;ve not disappeared, rather I&#39;ve been writing articles for the IBM Accelerated Insights solution channel on HPCWire.</description>
     </item>
     
     <item>
       <title>IBM Platform HPC V3.2: GPU Management with NVIDIA CUDA 5</title>
-      <link>http://gpsamu.github.io/blog/hpc32_cuda/</link>
+      <link>http://www.gaborsamu.com/blog/hpc32_cuda/</link>
       <pubDate>Wed, 24 Apr 2013 12:32:15 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/hpc32_cuda/</guid>
+      <guid>http://www.gaborsamu.com/blog/hpc32_cuda/</guid>
       <description>IBM Platform HPC V3.2 is easy-to-use, yet comprehensive technical computing cluster management software. It includes as standard GPU scheduling, managementand monitoring capabilities for systems equipped with NVIDIA Tesla GPUs.</description>
     </item>
     

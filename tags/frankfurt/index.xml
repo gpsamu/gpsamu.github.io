@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>frankfurt on Technical Computing Goulash</title>
-    <link>http://gpsamu.github.io/tags/frankfurt/</link>
+    <link>http://www.gaborsamu.com/tags/frankfurt/</link>
     <description>Recent content in frankfurt on Technical Computing Goulash</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
     <copyright>Gábor Samu - All rights reserved</copyright>
     <lastBuildDate>Tue, 28 Jul 2015 21:08:23 -0500</lastBuildDate>
     
-	<atom:link href="http://gpsamu.github.io/tags/frankfurt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.gaborsamu.com/tags/frankfurt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Looking back at ISC High-Performance 2015</title>
-      <link>http://gpsamu.github.io/blog/isc15_lookingback/</link>
+      <link>http://www.gaborsamu.com/blog/isc15_lookingback/</link>
       <pubDate>Tue, 28 Jul 2015 21:08:23 -0500</pubDate>
       
-      <guid>http://gpsamu.github.io/blog/isc15_lookingback/</guid>
+      <guid>http://www.gaborsamu.com/blog/isc15_lookingback/</guid>
       <description>I&#39;ve always enjoyed a good road trip. There&#39;s just something fun about jumping in the car, and heading to a far off location. As they say, half of the fun is just getting to your destination.</description>
     </item>
     
